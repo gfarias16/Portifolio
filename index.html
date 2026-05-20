@@ -1,300 +1,190 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portifolio Website</title>
+    <meta name="description" content="Portfólio pessoal de Gabriel Farias, desenvolvedor focado em interfaces modernas, responsivas e acessíveis.">
+    <title>Gabriel Farias | Portfólio</title>
+    <link rel="preconnect" href="https://unpkg.com">
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-
     <header class="header">
-        <a href="#home" class="logo">Gabriel
-        <span>Farias</span></a>
+        <a href="#home" class="logo" aria-label="Ir para o início">Gabriel <span>Farias</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+            <i class="bx bx-menu"></i>
+        </button>
 
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
+        <nav class="navbar" id="navbar" aria-label="Menu principal">
+            <a href="#home" class="active">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#education">Formação</a>
+            <a href="#projects">Projetos</a>
+            <a href="#services">Serviços</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Olá, este é o <span>Gabriel</span></h1>
-            <h3 class="text-animation">Eu sou  <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione fuga libero necessitatibus iste reprehenderit, deleniti voluptas ut fugiat error perferendis eos! Similique vitae laborum maxime officiis repellat unde quibusdam?</p>
-        
+    <main>
+        <section class="home" id="home">
+            <div class="home-content">
+                <p class="eyebrow">Desenvolvedor em evolução</p>
+                <h1>Olá, eu sou <span>Gabriel Farias</span></h1>
+                <h2 class="text-animation">Eu crio <span></span></h2>
+                <p>
+                    Desenvolvo experiências digitais modernas, responsivas e objetivas. Meu foco é transformar ideias em interfaces claras, rápidas e agradáveis de usar.
+                </p>
 
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn de Gabriel"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub de Gabriel"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram de Gabriel"><i class="bx bxl-instagram"></i></a>
+                </div>
+
+                <div class="btn-group">
+                    <a href="#projects" class="btn">Ver projetos</a>
+                    <a href="#contact" class="btn btn-outline">Contato</a>
+                </div>
             </div>
 
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
-            </div>
-        </div>    
             <div class="home-img">
-                <img src="Imagem2.jpg" alt="foto de gabriel">
-            </div>       
-    </section>
+                <img src="Imagem2.jpg" alt="Foto de perfil de Gabriel Farias">
+            </div>
+        </section>
 
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
+        <section class="about" id="about">
+            <h2 class="heading">Sobre <span>mim</span></h2>
+            <div class="about-card">
+                <p>
+                    Sou Gabriel Farias, estudante e desenvolvedor em formação. Tenho interesse em desenvolvimento web, criação de interfaces e boas práticas para construir páginas acessíveis, organizadas e com boa experiência para o usuário.
+                </p>
+                <div class="skills-list" aria-label="Principais habilidades">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Responsividade</span>
+                    <span>UI Design</span>
+                </div>
+            </div>
+        </section>
 
-        <div class="timeline-items">
+        <section class="education" id="education">
+            <h2 class="heading">Formação</h2>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
+            <div class="timeline-items">
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2021</div>
                     <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam sed corporis nulla itaque voluptatum quae, accusantium unde dolorum magni, perferendis consequuntur inventore labore praesentium rerum quas eius ea illum.
-                        </p>
+                        <h3>Ensino Médio</h3>
+                        <p>Conclusão da base acadêmica e início do interesse por tecnologia, lógica e criação de projetos digitais.</p>
                     </div>
-                
-            </div>
+                </article>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2022</div>
                     <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus debitis eligendi voluptatum quis maiores delectus reiciendis. Accusantium, illum earum? Ratione alias quos veritatis maxime praesentium, quam dolores eaque dicta.
-                        </p>
+                        <h3>Estudos em Tecnologia</h3>
+                        <p>Aprendizado de fundamentos de programação, estruturação de páginas e desenvolvimento web.</p>
                     </div>
-                
-            </div>
+                </article>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2023</div>
                     <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officiis odio voluptatibus cupiditate. Dolore minima labore assumenda, architecto harum enim facere dolores sit, repellendus quis iste inventore vero cupiditate temporibus?
-                        </p>
+                        <h3>Projetos Práticos</h3>
+                        <p>Criação de páginas responsivas, componentes visuais e experimentos para fortalecer o portfólio.</p>
                     </div>
-                
-            </div>
+                </article>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
+                <article class="timeline-item">
+                    <div class="timeline-dot"></div>
                     <div class="timeline-date">2024</div>
                     <div class="timeline-content">
-                        <h3>Job 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis sequi at quam voluptatum officia quidem non magni laudantium odio, animi blanditiis suscipit a! Quo ipsum nam omnis mollitia tempore?
-                        </p>
+                        <h3>Evolução Profissional</h3>
+                        <p>Foco em melhorar qualidade visual, organização de código, acessibilidade e publicação de projetos.</p>
                     </div>
-                
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
+        <section class="projects" id="projects">
+            <h2 class="heading">Projetos</h2>
 
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
+            <div class="projects-container">
+                <article class="project-card">
+                    <img src="imagem.jpg" alt="Prévia de projeto web responsivo">
+                    <div>
+                        <h3>Landing Page Responsiva</h3>
+                        <p>Página institucional com foco em layout moderno, responsividade e hierarquia visual.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-highlight">
+                    <div>
+                        <h3>Interface Web</h3>
+                        <p>Protótipo visual de aplicação com cards, seções organizadas e estilo escuro.</p>
+                        <div class="project-tags">
+                            <span>UI</span>
+                            <span>Responsivo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card project-card-highlight">
+                    <div>
+                        <h3>Próximo Projeto</h3>
+                        <p>Reserve este espaço para seu melhor projeto publicado, com link para GitHub e demonstração online.</p>
+                        <a href="#contact" class="text-link">Vamos conversar</a>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
+        <section class="services" id="services">
+            <h2 class="heading">Serviços</h2>
+
+            <div class="services-container">
+                <article class="service-box">
+                    <h3>UI Design</h3>
+                    <p>Criação de layouts limpos, modernos e alinhados ao objetivo do projeto.</p>
+                </article>
+
+                <article class="service-box">
+                    <h3>Front-end</h3>
+                    <p>Desenvolvimento de páginas responsivas usando HTML, CSS e JavaScript.</p>
+                </article>
+
+                <article class="service-box">
+                    <h3>Responsividade</h3>
+                    <p>Ajustes para que o site funcione bem em celular, tablet e desktop.</p>
+                </article>
+
+                <article class="service-box">
+                    <h3>Melhorias Web</h3>
+                    <p>Organização visual, otimização básica, acessibilidade e manutenção de páginas.</p>
+                </article>
             </div>
+        </section>
 
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
+        <section class="contact" id="contact">
+            <h2 class="heading">Entre em <span>contato</span></h2>
+
+            <div class="contact-card">
+                <p>Tem uma oportunidade, projeto ou ideia? Envie uma mensagem e vamos conversar.</p>
+                <a class="btn" href="mailto:gabriel.farias@email.com">Enviar e-mail</a>
             </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        
-        <form action="">
-            <div class="input-group"></div>
-                <div class="input-box">
-                    <input type="text">
-                </div>
-        </form>
-    </section>
+        </section>
+    </main>
 
     <script src="script.js"></script>
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Portifolio Website</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-</head>
-<body>
-
-    <header class="header">
-        <a href="#home" class="logo">Gabriel
-        <span>Farias</span></a>
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#education">Education</a>
-            <a href="#services">Services</a>
-            <a href="#testimonials">Testimonials</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Olá, este é o <span>Gabriel</span></h1>
-            <h3 class="text-animation">Eu sou  <span></span></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ratione fuga libero necessitatibus iste reprehenderit, deleniti voluptas ut fugiat error perferendis eos! Similique vitae laborum maxime officiis repellat unde quibusdam?</p>
-        
-
-            <div class="social-icons">
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-twitter'></i></a>
-            </div>
-
-            <div class="btn-group">
-                <a href="#" class="btn">Hire</a>
-                <a href="#contact" class="btn">Contact</a>
-            </div>
-        </div>    
-            <div class="home-img">
-                <img src="Imagem2.jpg" alt="foto de gabriel">
-            </div>       
-    </section>
-
-    <section class="education" id="education">
-        <h2 class="heading">Education</h2>
-
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
-                    <div class="timeline-content">
-                        <h3>High School</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veniam sed corporis nulla itaque voluptatum quae, accusantium unde dolorum magni, perferendis consequuntur inventore labore praesentium rerum quas eius ea illum.
-                        </p>
-                    </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
-                    <div class="timeline-content">
-                        <h3>University</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, repellendus debitis eligendi voluptatum quis maiores delectus reiciendis. Accusantium, illum earum? Ratione alias quos veritatis maxime praesentium, quam dolores eaque dicta.
-                        </p>
-                    </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
-                    <div class="timeline-content">
-                        <h3>Internship</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum officiis odio voluptatibus cupiditate. Dolore minima labore assumenda, architecto harum enim facere dolores sit, repellendus quis iste inventore vero cupiditate temporibus?
-                        </p>
-                    </div>
-                
-            </div>
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3>Job 1</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet veritatis sequi at quam voluptatum officia quidem non magni laudantium odio, animi blanditiis suscipit a! Quo ipsum nam omnis mollitia tempore?
-                        </p>
-                    </div>
-                
-            </div>
-        </div>
-    </section>
-
-    <section class="services" id="services">
-        <h2 class="heading">Services</h2>
-
-        <div class="services-container">
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>UI Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Frontend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Backend Development</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
-            </div>
-
-            <div class="service-box">
-                <div class="service-info">
-                    <h4>Testing</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur harum tempora temporibus unde expedita ratione molestias vitae ipsum enim, vero reprehenderit atque modi quisquam veniam suscipit, eaque nemo? Voluptatibus, autem.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        
-        <form action="">
-            <div class="input-group"></div>
-                <div class="input-box">
-                    <input type="text">
-                </div>
-        </form>
-    </section>
-
-    <script src="script.js"></script>
-</body>
->>>>>>> 5fe779956dd6a28627ec181f0ff1c00bca54b352
 </html>
