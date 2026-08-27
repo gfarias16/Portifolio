@@ -3,44 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio pessoal de Gabriel Farias, desenvolvedor focado em interfaces modernas, responsivas e acessíveis.">
-    <title>Gabriel Farias | Portfólio</title>
-    <link rel="preconnect" href="https://unpkg.com">
+    <meta name="description" content="Portfólio profissional de Gabriel Farias, desenvolvedor de software com experiência em sistemas web, APIs, infraestrutura, automação, monitoramento e integrações.">
+    <meta name="theme-color" content="#080808">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Gabriel Farias | Desenvolvedor">
+    <meta property="og:description" content="Desenvolvedor de software com experiência em sistemas web, APIs, infraestrutura, automação, monitoramento e integrações.">
+    <meta property="og:url" content="https://portifolio-theta-ten-84.vercel.app/">
+    <meta property="og:image" content="https://portifolio-theta-ten-84.vercel.app/img_eu.jpg">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="959">
+    <meta property="og:image:height" content="1280">
+    <meta property="og:image:alt" content="Foto profissional de Gabriel Farias">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Gabriel Farias | Desenvolvedor">
+    <meta name="twitter:description" content="Sistemas web, APIs, infraestrutura, automação, monitoramento e integrações.">
+    <meta name="twitter:image" content="https://portifolio-theta-ten-84.vercel.app/img_eu.jpg">
+    <link rel="canonical" href="https://portifolio-theta-ten-84.vercel.app/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <title>Gabriel Farias | Desenvolvedor</title>
 </head>
 <body>
-    <header class="header">
+    <a class="skip-link" href="#main-content">Ir para o conteúdo principal</a>
+
+    <header class="header" id="site-header">
         <a href="#home" class="logo" aria-label="Ir para o início">Gabriel <span>Farias</span></a>
 
-        <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
-            <i class="bx bx-menu"></i>
+        <button class="menu-button" id="menu-button" type="button" aria-label="Abrir menu" aria-controls="navbar" aria-expanded="false">
+            <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
         </button>
 
         <nav class="navbar" id="navbar" aria-label="Menu principal">
-            <a href="#home" class="active">Início</a>
+            <a href="#home" class="active" aria-current="location">Início</a>
             <a href="#about">Sobre</a>
+            <a href="#skills">Tecnologias</a>
             <a href="#education">Formação</a>
             <a href="#projects">Projetos</a>
-            <a href="#services">Serviços</a>
+            <a href="#areas">Serviços</a>
             <a href="#contact">Contato</a>
         </nav>
     </header>
 
-    <main>
-        <section class="home" id="home">
+    <main id="main-content">
+        <section class="home" id="home" aria-labelledby="home-title">
             <div class="home-content">
-                <p class="eyebrow">Desenvolvedor em evolução</p>
-                <h1>Olá, eu sou <span>Gabriel Farias</span></h1>
-                <h2 class="text-animation">Eu crio <span></span></h2>
-                <p>
-                    Desenvolvo experiências digitais modernas, responsivas e objetivas. Meu foco é transformar ideias em interfaces claras, rápidas e agradáveis de usar.
-                </p>
+                <p class="eyebrow">Desenvolvedor</p>
+                <h1 id="home-title">Olá, eu sou <span>Gabriel Farias</span></h1>
+                <!-- <h2>Sistemas, APIs, Infraestrutura &amp; Automação</h2> -->
+                <p class="text-animation" aria-hidden="true"><span></span></p>
+                <p class="home-description">Desenvolvo sistemas, APIs, automações e integrações para resolver problemas reais, conectando software, infraestrutura, dados e ambientes operacionais.</p>
 
-                <div class="social-icons">
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn de Gabriel"><i class="bx bxl-linkedin"></i></a>
-                    <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub de Gabriel"><i class="bx bxl-github"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram de Gabriel"><i class="bx bxl-instagram"></i></a>
+                <div class="social-icons" role="group" aria-label="Perfis profissionais">
+                    <a class="social-link" href="https://www.linkedin.com/in/gabriel-f-5911b1125/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Gabriel Farias">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path d="M5.2 7.8H1.7V22h3.5V7.8ZM3.5 2A2.1 2.1 0 1 0 3.5 6.2 2.1 2.1 0 0 0 3.5 2ZM22 13.9c0-4.3-2.3-6.4-5.4-6.4a4.7 4.7 0 0 0-4.2 2.3v-2H9V22h3.5v-7c0-1.8.3-3.6 2.6-3.6s2.3 2.1 2.3 3.7V22H22v-8.1Z"/>
+                        </svg>
+                    </a>
+                    <a class="social-link" href="https://github.com/gfarias16" target="_blank" rel="noopener noreferrer" aria-label="GitHub de Gabriel Farias">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .7a11.3 11.3 0 0 0-3.6 22c.6.1.8-.2.8-.5v-2.2c-3.3.7-4-1.4-4-1.4-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.6.1-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.3 11.3 0 0 0 12 .7Z"/></svg>
+                    </a>
+                    <button class="social-link social-link-pending" type="button" disabled title="URL pública do Instagram a confirmar" aria-label="Instagram de Gabriel Farias: link a confirmar">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                            <path fill-rule="evenodd" d="M7.2 2h9.6A5.2 5.2 0 0 1 22 7.2v9.6a5.2 5.2 0 0 1-5.2 5.2H7.2A5.2 5.2 0 0 1 2 16.8V7.2A5.2 5.2 0 0 1 7.2 2Zm-.1 2.2a2.9 2.9 0 0 0-2.9 2.9v9.8a2.9 2.9 0 0 0 2.9 2.9h9.8a2.9 2.9 0 0 0 2.9-2.9V7.1a2.9 2.9 0 0 0-2.9-2.9H7.1Zm10.1 1.7a1.3 1.3 0 1 1 0 2.6 1.3 1.3 0 0 1 0-2.6ZM12 7.1a4.9 4.9 0 1 1 0 9.8 4.9 4.9 0 0 1 0-9.8Zm0 2.2a2.7 2.7 0 1 0 0 5.4 2.7 2.7 0 0 0 0-5.4Z"/>
+                        </svg>
+                    </button>
                 </div>
 
                 <div class="btn-group">
@@ -50,140 +77,256 @@
             </div>
 
             <div class="home-img">
-                <img src="Imagem2.jpg" alt="Foto de perfil de Gabriel Farias">
+                <img src="img_eu.jpg" width="959" height="1280" alt="Foto profissional de Gabriel Farias" fetchpriority="high" decoding="async">
             </div>
         </section>
 
-        <section class="about" id="about">
-            <h2 class="heading">Sobre <span>mim</span></h2>
-            <div class="about-card">
-                <p>
-                    Sou Gabriel Farias, estudante e desenvolvedor em formação. Tenho interesse em desenvolvimento web, criação de interfaces e boas práticas para construir páginas acessíveis, organizadas e com boa experiência para o usuário.
-                </p>
-                <div class="skills-list" aria-label="Principais habilidades">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsividade</span>
-                    <span>UI Design</span>
-                </div>
+        <section class="about section-surface" id="about" aria-labelledby="about-title">
+            <div class="section-header">
+                <p class="section-kicker">Perfil profissional</p>
+                <h2 class="heading" id="about-title">Sobre <span>mim</span></h2>
+            </div>
+
+            <div class="about-grid">
+                <article class="content-card about-copy">
+                    <p>Sou Gabriel Farias, desenvolvedor de software formado em Análise e Desenvolvimento de Sistemas, com experiência prática em aplicações web, APIs, infraestrutura, monitoramento e integração de sistemas.</p>
+                    <p>Minha trajetória inclui atuação no Exército Brasileiro e no Gabinete de Segurança Institucional da Presidência da República, em ambientes que fortaleceram responsabilidade, disciplina, organização e análise de problemas.</p>
+                    <p>Atualmente atuo no Centro de Operações do Rio, por meio da Smartech Solutions, trabalhando com desenvolvimento, análise de sistemas, infraestrutura e suporte técnico especializado.</p>
+                </article>
+
+                <aside class="content-card profile-summary" aria-label="Resumo de atuação">
+                    <h3>Experiência aplicada</h3>
+                    <ul class="check-list">
+                        <li>Soluções utilizadas em ambientes operacionais</li>
+                        <li>Integração entre aplicações, dados e dispositivos</li>
+                        <li>Infraestrutura, containers e servidores Linux</li>
+                        <li>Monitoramento, diagnóstico e automação</li>
+                    </ul>
+                </aside>
             </div>
         </section>
 
-        <section class="education" id="education">
-            <h2 class="heading">Formação</h2>
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+            <div class="section-header">
+                <p class="section-kicker">Conhecimentos técnicos</p>
+                <h2 class="heading" id="skills-title">Tecnologias</h2>
+                <p class="section-description">Ferramentas e tecnologias que utilizo em diferentes tipos de solução, organizadas por contexto de aplicação.</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Linguagens</h3>
+                    <ul class="tag-list" aria-label="Linguagens">
+                        <li>Python</li><li>JavaScript</li><li>TypeScript</li>
+                        <li>PHP</li><li>HTML</li><li>CSS</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Aplicações web</h3>
+                    <ul class="tag-list" aria-label="Frameworks e frontend">
+                        <li>Django</li><li>FastAPI</li><li>Laravel</li>
+                        <li>React</li><li>Vite</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Dados</h3>
+                    <ul class="tag-list" aria-label="Bancos de dados">
+                        <li>PostgreSQL</li><li>MariaDB</li><li>MySQL</li><li>SQLite</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Infraestrutura</h3>
+                    <ul class="tag-list" aria-label="Infraestrutura e ambiente">
+                        <li>Docker</li><li>Docker Compose</li><li>Linux</li><li>Git</li><li>GitHub</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Observabilidade</h3>
+                    <ul class="tag-list" aria-label="Monitoramento e observabilidade">
+                        <li>Zabbix</li><li>Grafana</li><li>Prometheus</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Integração e vídeo</h3>
+                    <ul class="tag-list" aria-label="APIs, integração e multimídia">
+                        <li>APIs REST</li><li>JSON</li><li>RTSP</li><li>HLS</li>
+                        <li>ONVIF</li><li>FFmpeg</li><li>FFprobe</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="education section-surface" id="education" aria-labelledby="education-title">
+            <div class="section-header"><p class="section-kicker">Formação acadêmica</p><h2 class="heading" id="education-title">Formação</h2></div>
 
             <div class="timeline-items">
                 <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021</div>
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <time class="timeline-date" datetime="2015">2015 — 2017</time>
                     <div class="timeline-content">
-                        <h3>Ensino Médio</h3>
-                        <p>Conclusão da base acadêmica e início do interesse por tecnologia, lógica e criação de projetos digitais.</p>
+                        <h3>Técnico em Logística</h3>
+                        <p class="institution">SENAI</p>
+                        <p>Formação técnica concluída.</p>
                     </div>
                 </article>
-
                 <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2022</div>
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <time class="timeline-date" datetime="2023">2023 — 2025</time>
                     <div class="timeline-content">
-                        <h3>Estudos em Tecnologia</h3>
-                        <p>Aprendizado de fundamentos de programação, estruturação de páginas e desenvolvimento web.</p>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="institution">Universidade Veiga de Almeida — UVA</p>
+                        <p>Graduação concluída.</p>
                     </div>
                 </article>
-
                 <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2023</div>
+                    <div class="timeline-dot" aria-hidden="true"></div>
+                    <time class="timeline-date" datetime="2025">2025 — 2026</time>
                     <div class="timeline-content">
-                        <h3>Projetos Práticos</h3>
-                        <p>Criação de páginas responsivas, componentes visuais e experimentos para fortalecer o portfólio.</p>
-                    </div>
-                </article>
-
-                <article class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2024</div>
-                    <div class="timeline-content">
-                        <h3>Evolução Profissional</h3>
-                        <p>Foco em melhorar qualidade visual, organização de código, acessibilidade e publicação de projetos.</p>
+                        <h3>Técnico em Informática / Programação</h3>
+                        <p class="institution">Colégio Santo Inácio</p>
+                        <p>Formação técnica voltada à informática e ao desenvolvimento de software.</p>
                     </div>
                 </article>
             </div>
-        </section>
 
-        <section class="projects" id="projects">
-            <h2 class="heading">Projetos</h2>
-
-            <div class="projects-container">
-                <article class="project-card">
-                    <img src="imagem.jpg" alt="Prévia de projeto web responsivo">
-                    <div>
-                        <h3>Landing Page Responsiva</h3>
-                        <p>Página institucional com foco em layout moderno, responsividade e hierarquia visual.</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-highlight">
-                    <div>
-                        <h3>Interface Web</h3>
-                        <p>Protótipo visual de aplicação com cards, seções organizadas e estilo escuro.</p>
-                        <div class="project-tags">
-                            <span>UI</span>
-                            <span>Responsivo</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="project-card project-card-highlight">
-                    <div>
-                        <h3>Próximo Projeto</h3>
-                        <p>Reserve este espaço para seu melhor projeto publicado, com link para GitHub e demonstração online.</p>
-                        <a href="#contact" class="text-link">Vamos conversar</a>
-                    </div>
-                </article>
+                <div class="certifications" role="region" aria-labelledby="certifications-title">
+                <h3 id="certifications-title">Cursos e certificações</h3>
+                <ul class="certification-list">
+                    <li><strong>Scrum Fundamentals Certified</strong><span>SCRUMstudy</span></li>
+                    <li><strong>Introdução à Segurança Cibernética</strong><span>Cisco</span></li>
+                    <li><strong>Proteção de Dados</strong><span>FGV</span></li>
+                    <li><strong>Segurança Digital</strong><span>FGV</span></li>
+                </ul>
             </div>
         </section>
 
-        <section class="services" id="services">
-            <h2 class="heading">Serviços</h2>
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+            <div class="section-header">
+                <p class="section-kicker">Experiência prática</p>
+                <h2 class="heading" id="projects-title">Projetos</h2>
+                <p class="section-description">Estudos de caso apresentados de forma pública e segura, sem informações internas dos ambientes profissionais.</p>
+            </div>
 
+            <div class="project-carousel" data-project-carousel>
+                <div class="project-carousel-toolbar">
+                    <p id="project-carousel-help">Aproxime o cursor para explorar e selecione um projeto para abrir os detalhes.</p>
+                    <div class="project-carousel-controls" role="group" aria-label="Controles do carrossel">
+                        <button type="button" data-carousel-prev aria-label="Projeto anterior">←</button>
+                        <button type="button" data-carousel-next aria-label="Próximo projeto">→</button>
+                    </div>
+                </div>
+
+                <div class="projects-container" data-project-track role="list" aria-describedby="project-carousel-help">
+                    <article class="project-card" data-project-card role="listitem">
+                        <div class="project-card-rail" aria-hidden="true"><span>01</span><strong>Gestão e Monitoramento</strong></div>
+                        <div class="project-card-details">
+                            <p class="card-kicker">Sistemas web</p>
+                            <h3>Gestão e Monitoramento de Infraestrutura Técnica</h3>
+                            <p>Aplicação web para centralizar informações, visualizar ativos em mapa e apoiar o acompanhamento de condições operacionais de infraestrutura técnica.</p>
+                            <ul class="tag-list" aria-label="Tecnologias do projeto"><li>Python</li><li>Django</li><li>PostgreSQL</li><li>Docker</li><li>APIs</li><li>Mapas</li></ul>
+                        </div>
+                        <button class="project-card-toggle" type="button" aria-expanded="false"><span class="sr-only">Abrir detalhes de Gestão e Monitoramento de Infraestrutura Técnica</span></button>
+                    </article>
+
+                    <article class="project-card" data-project-card role="listitem">
+                        <div class="project-card-rail" aria-hidden="true"><span>02</span><strong>Auditoria de Streams</strong></div>
+                        <div class="project-card-details">
+                            <p class="card-kicker">Vídeo e qualidade</p>
+                            <h3>Auditoria de Qualidade de Streams de Vídeo</h3>
+                            <p>Sistema para analisar características técnicas e disponibilidade de streams, registrar verificações e acompanhar resultados históricos.</p>
+                            <ul class="tag-list" aria-label="Tecnologias do projeto"><li>Laravel</li><li>React</li><li>PostgreSQL</li><li>Docker</li><li>FFmpeg</li><li>FFprobe</li></ul>
+                        </div>
+                        <button class="project-card-toggle" type="button" aria-expanded="false"><span class="sr-only">Abrir detalhes de Auditoria de Qualidade de Streams de Vídeo</span></button>
+                    </article>
+
+                    <article class="project-card" data-project-card role="listitem">
+                        <div class="project-card-rail" aria-hidden="true"><span>03</span><strong>Observabilidade</strong></div>
+                        <div class="project-card-details">
+                            <p class="card-kicker">Observabilidade</p>
+                            <h3>Monitoramento de Infraestrutura e Serviços</h3>
+                            <p>Implementação e configuração de monitoramento para aplicações, serviços e equipamentos, com dashboards de disponibilidade e desempenho.</p>
+                            <ul class="tag-list" aria-label="Tecnologias do projeto"><li>Zabbix</li><li>Grafana</li><li>Prometheus</li><li>Linux</li><li>Docker</li></ul>
+                        </div>
+                        <button class="project-card-toggle" type="button" aria-expanded="false"><span class="sr-only">Abrir detalhes de Monitoramento de Infraestrutura e Serviços</span></button>
+                    </article>
+
+                    <article class="project-card" data-project-card role="listitem">
+                        <div class="project-card-rail" aria-hidden="true"><span>04</span><strong>APIs e Integrações</strong></div>
+                        <div class="project-card-details">
+                            <p class="card-kicker">Integrações</p>
+                            <h3>APIs e Integrações de Sistemas</h3>
+                            <p>Desenvolvimento e integração de APIs para comunicação entre aplicações, serviços, dispositivos e diferentes fontes de dados.</p>
+                            <ul class="tag-list" aria-label="Tecnologias do projeto"><li>Python</li><li>FastAPI</li><li>APIs REST</li><li>JSON</li><li>Bancos de dados</li><li>Docker</li></ul>
+                        </div>
+                        <button class="project-card-toggle" type="button" aria-expanded="false"><span class="sr-only">Abrir detalhes de APIs e Integrações de Sistemas</span></button>
+                    </article>
+
+                    <article class="project-card" data-project-card role="listitem">
+                        <div class="project-card-rail" aria-hidden="true"><span>05</span><strong>Vídeo IP e Streaming</strong></div>
+                        <div class="project-card-details">
+                            <p class="card-kicker">Vídeo IP</p>
+                            <h3>Soluções para Vídeo IP e Streaming</h3>
+                            <p>Integração e desenvolvimento de soluções para consumo, processamento e distribuição de streams de vídeo em aplicações e sistemas.</p>
+                            <ul class="tag-list" aria-label="Tecnologias do projeto"><li>RTSP</li><li>HLS</li><li>ONVIF</li><li>FFmpeg</li><li>APIs</li><li>Python</li></ul>
+                        </div>
+                        <button class="project-card-toggle" type="button" aria-expanded="false"><span class="sr-only">Abrir detalhes de Soluções para Vídeo IP e Streaming</span></button>
+                    </article>
+                </div>
+                <p class="sr-only" aria-live="polite" data-carousel-status></p>
+            </div>
+        </section>
+
+        <section class="areas section-surface" id="areas" aria-labelledby="areas-title">
+            <div class="section-header">
+                <p class="section-kicker">Áreas de atuação</p>
+                <h2 class="heading" id="areas-title">Soluções que desenvolvo</h2>
+            </div>
             <div class="services-container">
                 <article class="service-box">
-                    <h3>UI Design</h3>
-                    <p>Criação de layouts limpos, modernos e alinhados ao objetivo do projeto.</p>
+                    <h3>Desenvolvimento de Sistemas Web</h3>
+                    <p>Aplicações que integram interface, backend, banco de dados e APIs.</p>
                 </article>
-
                 <article class="service-box">
-                    <h3>Front-end</h3>
-                    <p>Desenvolvimento de páginas responsivas usando HTML, CSS e JavaScript.</p>
+                    <h3>APIs e Integrações</h3>
+                    <p>Serviços para comunicação confiável entre sistemas e fontes de dados.</p>
                 </article>
-
                 <article class="service-box">
-                    <h3>Responsividade</h3>
-                    <p>Ajustes para que o site funcione bem em celular, tablet e desktop.</p>
+                    <h3>Automação</h3>
+                    <p>Ferramentas para automatizar processos, verificações e tarefas recorrentes.</p>
                 </article>
-
                 <article class="service-box">
-                    <h3>Melhorias Web</h3>
-                    <p>Organização visual, otimização básica, acessibilidade e manutenção de páginas.</p>
+                    <h3>Monitoramento e Observabilidade</h3>
+                    <p>Acompanhamento da disponibilidade e do desempenho de aplicações e serviços.</p>
+                </article>
+                <article class="service-box">
+                    <h3>Infraestrutura de Aplicações</h3>
+                    <p>Configuração e suporte a ambientes Linux, containers e serviços de aplicação.</p>
+                </article>
+                <article class="service-box">
+                    <h3>Soluções com Vídeo e Streaming</h3>
+                    <p>Integração de aplicações com streams, protocolos e dispositivos de vídeo.</p>
                 </article>
             </div>
         </section>
 
-        <section class="contact" id="contact">
-            <h2 class="heading">Entre em <span>contato</span></h2>
-
+        <section class="contact" id="contact" aria-labelledby="contact-title">
             <div class="contact-card">
-                <p>Tem uma oportunidade, projeto ou ideia? Envie uma mensagem e vamos conversar.</p>
-                <a class="btn" href="mailto:gabriel.farias@email.com">Enviar e-mail</a>
+                <p class="section-kicker"></p>
+                <h2 class="heading" id="contact-title">Vamos <span>conversar</span></h2>
+                <p>Tem um projeto, oportunidade ou desafio tecnológico? Entre em contato por e-mail ou pelo LinkedIn e conheça meus projetos públicos no GitHub.</p>
+                <div class="contact-actions" role="group" aria-label="Canais de contato">
+                    <a class="btn" href="mailto:gabrielfarias1699@gmail.com">Enviar e-mail</a>
+                    <a class="btn btn-outline" href="https://www.linkedin.com/in/gabriel-f-5911b1125/" target="_blank" rel="noopener noreferrer">Acessar LinkedIn</a>
+                    <a class="btn btn-outline" href="https://github.com/gfarias16" target="_blank" rel="noopener noreferrer">Acessar GitHub</a>
+                </div>
             </div>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>Gabriel Farias — Desenvolvimento de Software, Sistemas e Integrações.</p>
+        <a href="#home">Voltar ao início</a>
+    </footer>
 
     <script src="script.js"></script>
 </body>
