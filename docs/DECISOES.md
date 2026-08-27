@@ -34,11 +34,13 @@ Decisão: apresentar projetos profissionais somente por objetivo público e tecn
 
 Justificativa: demonstrar experiência prática sem expor informações operacionais, clientes, infraestrutura ou regras confidenciais.
 
-## Currículo não publicado por padrão
+## Currículo publicado após revisão e autorização
 
-Decisão: manter o PDF local fora da interface até existir autorização explícita e revisão de dados pessoais.
+Decisão: disponibilizar o PDF atual por um botão de download na seção de contato, após revisão e autorização explícita do titular.
 
-Justificativa: um arquivo real pode conter telefone, endereço ou outras informações que não devem ser publicadas automaticamente.
+Justificativa: o titular confirmou que o documento pode ser publicado mesmo contendo telefone e localização, assumindo conscientemente essa exposição.
+
+Consequências: o arquivo passa a integrar o deploy público. Substituições futuras devem repetir a revisão de privacidade antes do commit.
 
 ## Carrossel magnético sem framework
 

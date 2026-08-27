@@ -22,18 +22,18 @@ O site contém uma página profissional completa, estilos responsivos, navegaç�
 ## Publicação
 
 - URL: `https://portifolio-theta-ten-84.vercel.app/`.
-- Deploy automático e processo de publicação: **A confirmar**.
+- Deploy automático confirmado por integração do GitHub com a Vercel para a branch `main`.
 
 ## Pendências identificadas
 
 - Instagram público: **A confirmar**. O controle permanece visível, mas desabilitado e sem destino falso.
-- Publicação do currículo existente: o PDF contém telefone e localização residencial; depende de confirmação explícita ou de uma versão sanitizada.
+- Currículo publicado com autorização explícita do titular após revisão do telefone e da localização presentes no PDF.
 - Analytics e testes automatizados: **A confirmar**.
 
 ## Problemas conhecidos
 
-O currículo ainda não pode ser disponibilizado sem uma decisão sobre os dados pessoais presentes no PDF.
+Nenhum problema funcional conhecido após a última auditoria automatizada. O PDF público contém dados pessoais autorizados pelo titular.
 
 ## Próximos passos
 
-Confirmar o Instagram e decidir entre publicar o currículo atual ou fornecer uma versão sem telefone e localização residencial.
+Confirmar o Instagram e avaliar futuramente uma versão sanitizada do currículo para reduzir a exposição de dados pessoais.

@@ -89,7 +89,7 @@ Não crie Docker Compose para este site somente por padronização. Para uma pá
 - `script.js`: depende da presença de `#menu-button`, `#navbar` e `.navbar a`.
 - O carrossel magnético depende de `[data-project-carousel]`, `[data-project-track]`, `[data-project-card]` e seus controles. No mobile, ele deve permanecer como lista horizontal com scroll snap.
 - Imagens locais: nomes, proporção, tamanho do arquivo, direitos de uso e texto alternativo.
-- Currículo: existe arquivo local em `curriculo/`, mas sua publicação depende de confirmação explícita e revisão de dados pessoais.
+- Currículo: `curriculo/Curriculo14.01.2026.pdf` foi revisado e teve sua publicação autorizada explicitamente pelo titular, inclusive quanto ao telefone e à localização presentes no documento.
 
 Se IDs críticos forem renomeados, atualize HTML, CSS e JavaScript na mesma alteração. Caso novos scripts passem a ser carregados em páginas diferentes, proteja seletores ausentes antes de registrar eventos.
 
