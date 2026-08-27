@@ -2,7 +2,7 @@
 
 ## Escopo e objetivo
 
-Este arquivo orienta alterações em todo o projeto `Portifolio`. O projeto é um portfólio pessoal estático, em português do Brasil, que apresenta perfil profissional, formação, projetos, serviços e formas de contato de Gabriel Farias.
+Este arquivo orienta alterações em todo o projeto `Portifolio`. O projeto é um portfólio profissional estático, em português do Brasil, que apresenta perfil, tecnologias, formação, projetos, áreas de atuação e contato de Gabriel Farias.
 
 O objetivo atual é manter uma página leve, moderna, responsiva e acessível. Não introduza frameworks, backend ou ferramentas de build sem existir uma necessidade real e aprovação explícita.
 
@@ -11,8 +11,8 @@ O objetivo atual é manter uma página leve, moderna, responsiva e acessível. N
 - HTML5 semântico em `index.html`.
 - CSS responsivo em `style.css`.
 - JavaScript puro em `script.js`.
-- Boxicons carregado externamente por `https://unpkg.com`.
-- Imagens locais `Imagem2.jpg` e `imagem.jpg`.
+- Ícones essenciais implementados localmente com CSS e SVG inline, sem CDN.
+- Imagem pública atual `img_eu.jpg`, favicon vetorial `favicon.svg`; `Imagem2.jpg` permanece como asset legado não utilizado.
 
 Não existem `package.json`, lockfile, framework frontend, gerenciador de dependências, backend, banco de dados, Docker, Docker Compose, testes automatizados ou CI/CD.
 
@@ -20,9 +20,10 @@ Não existem `package.json`, lockfile, framework frontend, gerenciador de depend
 
 - `index.html`: ponto de entrada e conteúdo completo da página.
 - `style.css`: tema escuro, layout, componentes, animações e media queries.
-- `script.js`: abertura e fechamento do menu mobile e atualização de `aria-expanded`.
-- `Imagem2.jpg`: foto principal da seção inicial.
-- `imagem.jpg`: imagem usada no card de projeto.
+- `script.js`: menu mobile acessível e atualização da seção ativa na navegação.
+- `img_eu.jpg`: foto principal da seção inicial.
+- `favicon.svg`: ícone vetorial local da página.
+- `Imagem2.jpg`: foto anterior, mantida como asset legado e não utilizada pela página.
 - `AGENTS.md`: regras de manutenção deste projeto.
 
 ## Como executar
@@ -39,12 +40,12 @@ Para validar comportamento mais próximo de uma hospedagem real, prefira servir 
 
 Não existe suíte automatizada configurada. Antes de considerar uma alteração concluída:
 
-1. Abra o site e percorra todas as seções pelo menu: início, sobre, formação, projetos, serviços e contato.
+1. Abra o site e percorra todas as seções pelo menu: início, sobre, tecnologias, formação, projetos, atuação e contato.
 2. Verifique o menu mobile, incluindo abertura, fechamento após clicar em um link e valor correto de `aria-expanded`.
-3. Teste larguras próximas aos breakpoints atuais de `980px` e `720px`, além de desktop e celular pequeno.
-4. Confirme que não há rolagem horizontal, sobreposição do cabeçalho fixo, texto cortado ou cards desproporcionais.
+3. Teste larguras próximas aos breakpoints atuais de `1100px`, `820px`, `720px` e `480px`, além de `320px`, `375px`, `425px` e desktop amplo.
+4. Confirme que não há rolagem horizontal na página, sobreposição do cabeçalho fixo, texto cortado ou cards desproporcionais. A rolagem horizontal interna do carrossel mobile é intencional.
 5. Navegue usando apenas teclado e valide foco visível, ordem de tabulação, links e botão do menu.
-6. Verifique o console do navegador e a aba de rede, incluindo carregamento do CSS, JavaScript, imagens e Boxicons.
+6. Verifique o console do navegador e a aba de rede, incluindo carregamento do CSS, JavaScript e imagens locais.
 7. Teste zoom de pelo menos 200% e confira contraste, textos alternativos e hierarquia dos títulos.
 8. Confirme que os links externos abrem corretamente e que o endereço de contato não continua como placeholder antes de publicar.
 
@@ -54,7 +55,7 @@ Não existe suíte automatizada configurada. Antes de considerar uma alteração
 - Banco de dados: nenhum.
 - Volumes persistentes: nenhum.
 - Portas utilizadas: nenhuma porta fixa no código; depende do servidor HTTP escolhido.
-- Hospedagem e domínio de produção: **A confirmar**.
+- Hospedagem de produção: Vercel em `https://portifolio-theta-ten-84.vercel.app/`.
 
 Não crie Docker Compose para este site somente por padronização. Para uma página estática pequena, hospedagem estática costuma ser mais simples; adote container apenas se o processo de publicação exigir.
 
@@ -71,38 +72,40 @@ Não crie Docker Compose para este site somente por padronização. Para uma pá
 
 ## Regras importantes para alterações
 
-- Preserve exatamente as maiúsculas e minúsculas dos arquivos `Imagem2.jpg` e `imagem.jpg`; servidores Linux diferenciam o casing.
-- A foto principal usa intencionalmente uma oval simétrica, borda neon e glow forte no hover. Não a transforme novamente em círculo, formato de ovo ou octógono recortado sem solicitação.
-- O texto “Eu crio” usa `@keyframes words`, `typing` e `cursor`. Preserve a animação caractere a caractere; não substitua por troca instantânea de frases sem solicitação.
+- Preserve exatamente as maiúsculas e minúsculas de `img_eu.jpg`; servidores Linux diferenciam o casing.
+- A foto principal usa intencionalmente formato circular, borda neon e glow forte no hover. Preserve largura e altura iguais; não retorne ao recorte estreito sem solicitação.
+- O texto “Atuação em” usa `@keyframes words`, `typing` e `cursor`. Preserve a animação discreta e o fallback de `prefers-reduced-motion`.
 - Mantenha alinhados os IDs das seções, os `href` do menu e os seletores usados pelo JavaScript.
 - Ao adicionar uma seção, atualize navegação, espaçamento do cabeçalho fixo, responsividade e acessibilidade.
 - Links com `target="_blank"` devem manter proteção com `rel="noreferrer"` ou `rel="noopener noreferrer"`.
 - Não inclua credenciais, tokens de analytics ou dados pessoais sensíveis diretamente no código.
-- O link de e-mail e os links sociais aparentam usar valores genéricos; confirme os endereços reais antes da publicação.
+- GitHub `gfarias16`, e-mail profissional `gabrielfarias1699@gmail.com` e LinkedIn `gabriel-f-5911b1125` estão confirmados publicamente. Instagram permanece **A confirmar** e não deve ser inventado.
+- Instagram aparece visualmente como controle desabilitado enquanto a URL está pendente. Não o torne link sem confirmar o destino.
 
 ## Arquivos e comportamentos críticos
 
 - `index.html`: estrutura, SEO básico, acessibilidade, links e conteúdo público.
 - `style.css`: variáveis globais, cabeçalho fixo, retrato, animação de digitação, timeline e breakpoints.
 - `script.js`: depende da presença de `#menu-button`, `#navbar` e `.navbar a`.
+- O carrossel magnético depende de `[data-project-carousel]`, `[data-project-track]`, `[data-project-card]` e seus controles. No mobile, ele deve permanecer como lista horizontal com scroll snap.
 - Imagens locais: nomes, proporção, tamanho do arquivo, direitos de uso e texto alternativo.
-- CDN do Boxicons: indisponibilidade externa pode remover os ícones sociais e do menu.
+- Currículo: existe arquivo local em `curriculo/`, mas sua publicação depende de confirmação explícita e revisão de dados pessoais.
 
 Se IDs críticos forem renomeados, atualize HTML, CSS e JavaScript na mesma alteração. Caso novos scripts passem a ser carregados em páginas diferentes, proteja seletores ausentes antes de registrar eventos.
 
 ## Cuidados antes de alterar dependências ou infraestrutura
 
-- Boxicons é a única dependência externa identificada. Antes de atualizar a versão ou trocar o CDN, valide nomes dos ícones, integridade visual, disponibilidade e política de segurança da hospedagem.
+- O site não possui dependências externas de interface. Prefira CSS ou SVG local para novos ícones simples.
 - Não adicione npm/Vite/React apenas para mudanças que HTML, CSS e JavaScript atuais resolvem com clareza.
 - Se um processo de build for realmente introduzido, documente instalação, scripts, lockfile, versão do Node.js e estratégia de deploy neste arquivo e no README.
-- Se futuramente houver formulário com backend, implemente validação, proteção contra spam, privacidade, feedback de sucesso/erro e armazenamento seguro. O contato atual usa apenas `mailto:`.
+- Se futuramente houver formulário com backend, implemente validação, proteção contra spam, privacidade, feedback de sucesso/erro e armazenamento seguro. O contato atual direciona somente ao GitHub confirmado.
 - Antes de publicar imagens novas, comprima os arquivos e confirme licença, privacidade, dimensão e texto alternativo.
 
 ## Critério de conclusão
 
 Uma alteração só está concluída quando o HTML, o CSS e o JavaScript continuam carregando sem erros; navegação, menu mobile e animações funcionam; o layout foi verificado em desktop e mobile; acessibilidade básica foi revisada; imagens e links não estão quebrados; e nenhuma informação não confirmada foi apresentada como definitiva.
 
-Testes automatizados, lint, formatter, CI/CD, hospedagem, domínio e porta oficial permanecem **A confirmar**.
+Testes automatizados, lint, formatter, CI/CD e porta oficial de desenvolvimento permanecem **A confirmar**.
 
 ## Contexto do projeto
 
