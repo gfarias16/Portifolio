@@ -36,7 +36,7 @@ Justificativa: demonstrar experiência prática sem expor informações operacio
 
 ## Currículo publicado após revisão e autorização
 
-Decisão: disponibilizar o PDF atual por um botão de download na seção de contato, após revisão e autorização explícita do titular.
+Decisão: disponibilizar o PDF atual por um botão circular junto aos perfis profissionais, após revisão e autorização explícita do titular.
 
 Justificativa: o titular confirmou que o documento pode ser publicado mesmo contendo telefone e localização, assumindo conscientemente essa exposição.
 

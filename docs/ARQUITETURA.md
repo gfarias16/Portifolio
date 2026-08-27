@@ -14,6 +14,6 @@
 Navegador -> index.html -> style.css/script.js/img_eu.jpg
 ```
 
-O carrossel de projetos funciona como grade quando o JavaScript não está disponível. Com JavaScript, usa efeito magnético no desktop; até `820px`, usa rolagem horizontal nativa e scroll snap.
+O carrossel de projetos funciona como grade quando o JavaScript não está disponível. Com JavaScript, usa efeito magnético no desktop e calcula a largura das barras conforme a área útil ampliada; até `820px`, usa rolagem horizontal nativa e scroll snap.
 
 Não há porta fixa de desenvolvimento. A publicação confirmada usa hospedagem estática na Vercel em `https://portifolio-theta-ten-84.vercel.app/`.

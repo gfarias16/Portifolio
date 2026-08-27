@@ -9,9 +9,9 @@ Portfólio de Gabriel Farias é uma página profissional estática em português
 - Navegação por âncoras entre as seções.
 - Menu responsivo para dispositivos móveis.
 - Apresentação profissional com retrato circular, tecnologias agrupadas, timeline neon, certificações e estudos de caso.
-- Links públicos confirmados para GitHub e LinkedIn, além do e-mail profissional. Instagram permanece desabilitado enquanto a URL está **A confirmar**.
-- Currículo em PDF disponível para download após revisão e autorização explícita do titular sobre os dados pessoais presentes no documento.
-- Projetos apresentados em carrossel magnético no desktop e carrossel horizontal com scroll snap no mobile.
+- Links públicos confirmados para GitHub, LinkedIn e WhatsApp, além do e-mail profissional. Instagram permanece desabilitado enquanto a URL está **A confirmar**.
+- Currículo em PDF e WhatsApp disponíveis junto aos ícones sociais; a seção de contato oferece somente e-mail e WhatsApp.
+- Projetos apresentados em carrossel magnético ampliado no desktop, com barras adaptadas ao espaço disponível, e carrossel horizontal com scroll snap no mobile.
 - Animação textual discreta, foco visível e suporte a movimento reduzido.
 - Metadados SEO e Open Graph vinculados à publicação na Vercel.
 

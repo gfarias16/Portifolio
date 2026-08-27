@@ -85,19 +85,30 @@ if (projectCarousel) {
     const desktopCarousel = window.matchMedia("(min-width: 821px)");
     const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-    const collapsedWidth = 112;
-    const hoverWidth = 210;
-    const collapsedHeight = 350;
-    const hoverHeight = 400;
-    const influence = 220;
+    let collapsedWidth = 150;
+    let hoverWidth = 270;
+    const collapsedHeight = 390;
+    const hoverHeight = 450;
+    let influence = 300;
 
     let currentFactors = projectCards.map(() => 0);
     let targetFactors = projectCards.map(() => 0);
     let animationFrame = 0;
+    let resizeAnimationFrame = 0;
     let openIndex = null;
     let navigationIndex = 0;
 
     projectCarousel.classList.add("is-enhanced");
+
+    // Distribui as barras por toda a largura disponível sem estourar telas menores.
+    function updateCarouselMetrics() {
+        const gap = Number.parseFloat(getComputedStyle(projectTrack).gap) || 0;
+        const availablePerCard = (projectTrack.clientWidth - gap * (projectCards.length - 1)) / projectCards.length;
+
+        collapsedWidth = Math.min(170, Math.max(112, availablePerCard));
+        hoverWidth = Math.min(300, collapsedWidth + 130);
+        influence = Math.max(240, collapsedWidth * 1.8);
+    }
 
     function applyFactor(card, factor) {
         const width = collapsedWidth + (hoverWidth - collapsedWidth) * factor;
@@ -179,6 +190,11 @@ if (projectCarousel) {
             projectToggles[index].querySelector(".sr-only").textContent = `Abrir detalhes de ${card.querySelector("h3").textContent}`;
         });
         updateCarouselStatus(closingIndex, "Detalhes fechados");
+
+        if (desktopCarousel.matches) {
+            updateCarouselMetrics();
+        }
+
         resetMagneticCards();
 
         if (restoreFocus) {
@@ -251,6 +267,11 @@ if (projectCarousel) {
 
     desktopCarousel.addEventListener("change", () => {
         closeProject();
+
+        if (desktopCarousel.matches) {
+            updateCarouselMetrics();
+        }
+
         resetMagneticCards();
     });
 
@@ -259,5 +280,18 @@ if (projectCarousel) {
         resetMagneticCards();
     });
 
+    updateCarouselMetrics();
     projectCards.forEach((card) => applyFactor(card, 0));
+
+    window.addEventListener("resize", () => {
+        if (!desktopCarousel.matches || openIndex !== null) {
+            return;
+        }
+
+        cancelAnimationFrame(resizeAnimationFrame);
+        resizeAnimationFrame = requestAnimationFrame(() => {
+            updateCarouselMetrics();
+            resetMagneticCards();
+        });
+    });
 }

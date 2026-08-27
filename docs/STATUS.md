@@ -17,7 +17,9 @@ O site contém uma página profissional completa, estilos responsivos, navegaç�
 - Retrato circular com borda e glow neon.
 - Timeline alternada com linha, pontos e cards neon.
 - Carrossel magnético de cinco projetos no desktop, com clique, teclado, Escape e fallback mobile por scroll snap.
+- Área do carrossel ampliada no desktop, com barras dimensionadas dinamicamente conforme a largura disponível.
 - Áreas de atuação com o conteúdo profissional atual e composição visual próxima aos antigos cards de serviços.
+- Currículo e WhatsApp disponíveis junto aos ícones sociais; contato final reduzido a e-mail e WhatsApp.
 
 ## Publicação
 

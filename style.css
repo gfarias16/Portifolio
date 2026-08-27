@@ -645,12 +645,18 @@ section {
     font-size: 1.4rem;
 }
 
+.projects {
+    padding-inline: clamp(2.4rem, 4vw, 7rem);
+}
+
 .project-carousel {
     position: relative;
+    width: min(150rem, 100%);
+    margin-inline: auto;
 }
 
 .project-carousel-toolbar {
-    max-width: 110rem;
+    max-width: none;
     margin: 0 auto 1.5rem;
     color: var(--muted-color);
     display: flex;
@@ -755,7 +761,7 @@ section {
 
 /* No desktop, o aprimoramento em JS transforma a grade no carrossel magnético. */
 .project-carousel.is-enhanced .projects-container {
-    min-height: 52rem;
+    min-height: 58rem;
     padding: 4rem 0;
     display: flex;
     align-items: center;
@@ -766,8 +772,8 @@ section {
 
 .project-carousel.is-enhanced .project-card {
     flex: 0 0 auto;
-    width: var(--magnetic-width, 112px);
-    height: var(--magnetic-height, 350px);
+    width: var(--magnetic-width, 150px);
+    height: var(--magnetic-height, 390px);
     min-height: 0;
     padding: 0;
     will-change: width, height;
@@ -807,8 +813,8 @@ section {
 }
 
 .project-carousel.is-enhanced .project-card-details {
-    width: 48rem;
-    padding: 3.2rem;
+    width: 60rem;
+    padding: 3.6rem;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.18s ease;
@@ -833,8 +839,8 @@ section {
 }
 
 .project-carousel.is-enhanced .project-card.is-open {
-    width: min(52rem, 62vw) !important;
-    height: 46rem !important;
+    width: min(64rem, 58vw) !important;
+    height: 50rem !important;
     border-color: var(--main-color);
     box-shadow: 0 0 3rem rgba(0, 232, 216, 0.28);
 }
@@ -1009,6 +1015,10 @@ section {
 }
 
 @media (max-width: 820px) {
+    .projects {
+        padding-inline: var(--page-padding);
+    }
+
     section {
         padding-top: 9rem;
         padding-bottom: 9rem;

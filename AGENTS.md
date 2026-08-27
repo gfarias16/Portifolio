@@ -79,15 +79,16 @@ Não crie Docker Compose para este site somente por padronização. Para uma pá
 - Ao adicionar uma seção, atualize navegação, espaçamento do cabeçalho fixo, responsividade e acessibilidade.
 - Links com `target="_blank"` devem manter proteção com `rel="noreferrer"` ou `rel="noopener noreferrer"`.
 - Não inclua credenciais, tokens de analytics ou dados pessoais sensíveis diretamente no código.
-- GitHub `gfarias16`, e-mail profissional `gabrielfarias1699@gmail.com` e LinkedIn `gabriel-f-5911b1125` estão confirmados publicamente. Instagram permanece **A confirmar** e não deve ser inventado.
+- GitHub `gfarias16`, e-mail profissional `gabrielfarias1699@gmail.com`, LinkedIn `gabriel-f-5911b1125` e WhatsApp estão confirmados publicamente. Instagram permanece **A confirmar** e não deve ser inventado.
 - Instagram aparece visualmente como controle desabilitado enquanto a URL está pendente. Não o torne link sem confirmar o destino.
+- Currículo e WhatsApp aparecem junto aos ícones sociais no topo. A seção de contato mantém somente as ações de e-mail e WhatsApp.
 
 ## Arquivos e comportamentos críticos
 
 - `index.html`: estrutura, SEO básico, acessibilidade, links e conteúdo público.
 - `style.css`: variáveis globais, cabeçalho fixo, retrato, animação de digitação, timeline e breakpoints.
 - `script.js`: depende da presença de `#menu-button`, `#navbar` e `.navbar a`.
-- O carrossel magnético depende de `[data-project-carousel]`, `[data-project-track]`, `[data-project-card]` e seus controles. No mobile, ele deve permanecer como lista horizontal com scroll snap.
+- O carrossel magnético depende de `[data-project-carousel]`, `[data-project-track]`, `[data-project-card]` e seus controles. No desktop, usa uma área ampliada e calcula a largura das barras conforme o espaço disponível; no mobile, deve permanecer como lista horizontal com scroll snap.
 - Imagens locais: nomes, proporção, tamanho do arquivo, direitos de uso e texto alternativo.
 - Currículo: `curriculo/Curriculo14.01.2026.pdf` foi revisado e teve sua publicação autorizada explicitamente pelo titular, inclusive quanto ao telefone e à localização presentes no documento.
 
@@ -98,7 +99,7 @@ Se IDs críticos forem renomeados, atualize HTML, CSS e JavaScript na mesma alte
 - O site não possui dependências externas de interface. Prefira CSS ou SVG local para novos ícones simples.
 - Não adicione npm/Vite/React apenas para mudanças que HTML, CSS e JavaScript atuais resolvem com clareza.
 - Se um processo de build for realmente introduzido, documente instalação, scripts, lockfile, versão do Node.js e estratégia de deploy neste arquivo e no README.
-- Se futuramente houver formulário com backend, implemente validação, proteção contra spam, privacidade, feedback de sucesso/erro e armazenamento seguro. O contato atual direciona somente ao GitHub confirmado.
+- Se futuramente houver formulário com backend, implemente validação, proteção contra spam, privacidade, feedback de sucesso/erro e armazenamento seguro. O contato atual usa links diretos de e-mail e WhatsApp, sem backend.
 - Antes de publicar imagens novas, comprima os arquivos e confirme licença, privacidade, dimensão e texto alternativo.
 
 ## Critério de conclusão
